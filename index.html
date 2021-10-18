@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Photo Gallery</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
+
+
+</head>
+
+<body class="page-bg">
+    <!-- NavBar with Icons -->
+    <ul class="nav justify-content-end navbar-profile">
+        <li class="nav-item">
+            <a href="#" class="nav-link  menu-item nav-active text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                    class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                    <path fill-rule="evenodd"
+                        d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                </svg>
+                Logout</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link menu-item text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-person-fill"
+                    viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>
+                Profile</a>
+        </li>
+        <li class="nav-item navbar-padding">
+            <a href="#" class="nav-link menu-item text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                Favorites</a>
+        </li>
+    </ul>
+
+    <!-- Navbar with tabs -->
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom pt-4 pb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white ms-3 me-3 sharefont" href="#">Share Your Travels</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link ms-3 me-3 text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-3 me-3 text-white" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-3 me-3 text-white" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white ms-3 me-3" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Browse
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Continents</a></li>
+                            <li><a class="dropdown-item" href="#">Countries</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex search-nav">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn button-pink text-white" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container-fluid body-padding mt-4 mrbt">
+        <div class="row paddingleft">
+            <main class="container">
+                <ul id="imgContainer" class="gallery-image m-3">
+
+                </ul>
+            </main>
+        </div>
+    </div>
+
+    <div class="openimage"></div>
+
+</body>
+
+</html>
